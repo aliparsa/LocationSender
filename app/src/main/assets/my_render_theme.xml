@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://mapsforge.org/renderTheme renderTheme.xsd" version="3">
+
+
+
+<rule e="any" k="*" v="*">
+
+</rule>
+
+    <!-- Kooche -->
+    <rule e="way" k="highway" v="residential">
+        <line stroke="#cacaca" stroke-width="1" />
+    </rule>
+
+    <!-- Other -->
+    <rule e="way" k="highway" v="motorway|secondary|tertiary|unclassified|service ">
+        <line stroke="#acacac" stroke-width="2" />
+    </rule>
+
+    <!-- Khiyaban Asli -->
+    <rule e="way" k="highway" v="primary|motorway|trunk">
+        <line  stroke="#cab957" stroke-width="2.5" />
+    </rule>
+    
+    
+    <!-- vasate falakeha -->
+    <rule e="any" k="landuse" v="grass">
+        <area fill="#9fde83" ></area>
+    </rule>
+
+    <!-- park -->
+    <rule e="any" k="leisure" v="park">
+        <area fill="#9fde83" ></area>
+    </rule>
+
+
+    <!-- Band Forood Helicoopter -->
+    <rule e="any" k="aeroway" v="helipad">
+        <circle radius="20" fill="#777777" ></circle>
+    </rule>
+
+<!--
+    <rule e="way" k="amenity" v="*" closed="yes">
+        <area fill="#DDEECC" stroke="#006699" stroke-width="0.3" />
+    </rule>
+
+    <rule e="node" k="tourism" v="hotel" zoom-min="16">
+        <symbol src="file:/path/to/symbol/icon/hotel.png" />
+        <caption k="name" font-style="bold" font-size="10" fill="#4040ff" />
+    </rule>
+
+    -->
+
+</rendertheme>
